@@ -23,14 +23,6 @@ html, body{
       position: fixed;
       z-index: 4;
   }
-
-  #check--in--complete{
-      display: none;
-      height: 812px;
-      width: 375px;
-      position: fixed;
-      z-index: 8;
-  }
   
   #camera--trigger{
       width: 70px;

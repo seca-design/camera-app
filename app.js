@@ -28,7 +28,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
-    document.getElementById("check--in--complete").style.display="block";
+    window.location.href = 'https://55pq0g.axshare.com/#id=h4uqwn&p=check_in_complete';
 
     // track.stop();
 };
@@ -36,11 +36,13 @@ cameraTrigger.onclick = function() {
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
 
+// Block the video stream after picture is taken
+
 
 // Install ServiceWorker
 if ('serviceWorker' in navigator) {
   console.log('CLIENT: service worker registration in progress.');
-  navigator.serviceWorker.register( '/camera-app/part-2/sw.js' , { scope : ' ' } ).then(function() {
+  navigator.serviceWorker.register( 'sw.js' , { scope : ' ' } ).then(function() {
     console.log('CLIENT: service worker registration complete.');
   }, function() {
     console.log('CLIENT: service worker registration failure.');
