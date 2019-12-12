@@ -33,10 +33,6 @@ cameraTrigger.onclick = function() {
     // track.stop();
 };
 
-// Start the video stream when the window loads
-window.addEventListener("load", cameraStart, false);
-setTimeOut(cameraStart,5000);
-
 
 // Block the video stream after picture is taken
 
