@@ -33,12 +33,13 @@ cameraTrigger.onclick = function() {
 };
 
 // Start the video stream when the window loads
-window.addEventListener("load"){
-setTimeout(cameraStart, false, 1000);
-}
+window.addEventListener("load", cameraStart, false);
 
 // If user has already taken photo cancel video stream
-
+window.addEventListener("taken");
+if (!done) {
+  setTimeout(cameraStart, false, 1000);
+}
 
 
 // Install ServiceWorker
