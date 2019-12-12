@@ -29,7 +29,7 @@ cameraTrigger.onclick = function() {
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
 
-    window.location.href = 'https://55pq0g.axshare.com/check_in_complete';
+    window.location.href = 'https://55pq0g.axshare.com/#id=h4uqwn&p=check_in_complete&g=1';
 
     // track.stop();
 };
