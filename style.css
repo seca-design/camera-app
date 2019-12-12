@@ -29,6 +29,7 @@ html, body{
       height: 812px;
       width: 375px;
       position: fixed;
+      z-index: 8;
   }
   
   #camera--trigger{
