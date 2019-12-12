@@ -34,7 +34,7 @@ cameraTrigger.onclick = function() {
 
 // Start the video stream when the window loads
 window.addEventListener("load"){
-setTimeout(cameraStart, false, 10);
+setTimeout(cameraStart, false, 1000);
 }
 
 // If user has already taken photo cancel video stream
