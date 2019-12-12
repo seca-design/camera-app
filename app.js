@@ -28,18 +28,12 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
-    window.location.href = 'https://55pq0g.axshare.com/#id=h4uqwn&p=check_in_complete';
+    document.getElementById("check--in--complete").style.display=="block"
     // track.stop();
 };
 
 // Start the video stream when the window loads
 window.addEventListener("load", cameraStart, false);
-
-// If user has already taken photo cancel video stream
-window.addEventListener("taken");
-if (!done) {
-  setTimeout(cameraStart, false, 100000);
-}
 
 
 // Install ServiceWorker
