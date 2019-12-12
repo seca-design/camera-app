@@ -33,6 +33,9 @@ cameraTrigger.onclick = function() {
     // track.stop();
 };
 
+// Start the video stream when the window loads
+window.addEventListener("load", cameraStart, false);
+
 
 // Block the video stream after picture is taken
 
