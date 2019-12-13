@@ -28,7 +28,7 @@ cameraTrigger.onclick = function() {
     cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
     cameraOutput.src = cameraSensor.toDataURL("image/webp");
     cameraOutput.classList.add("taken");
-    window.location.href = 'https://55pq0g.axshare.com/#id=h4uqwn&p';
+    location.href = 'https://55pq0g.axshare.com/#id=h4uqwn&p&c=1';
 
     // track.stop();
 };
